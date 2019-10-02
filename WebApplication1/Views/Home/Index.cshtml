@@ -1,0 +1,30 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+	<h1>ASP.NET</h1>
+	<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+	<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<ol>
+	<li>Register two different users</li>
+	<li>Sign-in with User A in one browser (e.g. Chrome)</li>
+	<li>Open the report below</li>
+	<li>Sign-in with User B in a different browser (e.g. Firefox)</li>
+	<li>On my side I see with Telerik Reporting in version 2017 R3 (11.2.17.503) two different results (EXPECTING)</li>
+	<li class="text-danger">On my side I see with Telerik Reporting in version > 2018 (also in latest version) the same results (NOT EXPECTING). The second user sees the results of the first user</li>
+	<li>This is very critical change, especially in a multi-tenant system!!!</li>
+</ol>
+
+@if (User.Identity.IsAuthenticated)
+{
+	<div class="text-center">
+		<p><a class="btn btn-default" href="~/Html5ReportViewer1.html">Open Report</a></p>
+	</div>
+}
+else
+{
+	<p><button class="btn btn-default" disabled>Open Report (please sign-in first)</button></p>
+}
