@@ -1,19 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Telerik HTML5 Report Viewer</title>
+    <title>Telerik HTML5 Report Viewer</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/2019.3.917/js/kendo.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-	<link href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.blueopal.min.css" rel="stylesheet" />
 
 	<!--If Kendo is used it should be added before the report viewer.-->
-	<script src="ReportViewer/js/telerikReportViewer-11.2.17.1025.js"></script>
+	<script src="/api/reports/resources/js/telerikReportViewer"></script>
 
 	<style>
 		#reportViewer1 {
@@ -46,7 +45,7 @@
                     // The URL for custom report viewer template. The template can be edited -
                     // new functionalities can be added and unneeded ones can be removed.
                     // For more information please check http://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
-                    //
+                    // templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-13.2.19.918.html',
 
                     //ReportSource - report description
                     reportSource: {
